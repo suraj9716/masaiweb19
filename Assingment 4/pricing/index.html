@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+   
+    #heading {
+      text-align: center;
+      /* border: 2px solid red; */
+      width: 40%;
+      margin: auto;
+    }
+
+    #heading>h1 {
+      font-size: 40px;
+    }
+
+    #heading>p {
+      font-size: 20px;
+      line-height: 22px;
+      color: grey;
+    }
+
+    #cards-section {
+      /* border: 2px solid black; */
+      width: 70%;
+      margin: auto;
+  
+      margin-top: 30px;
+      display: flex;
+    }
+
+    #cards-section>div {
+      /* border: 2px solid red; */
+      width: 26%;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      border-radius: 20px;
+      margin: auto;
+      text-align: center;
+    }
+    h2+h1+p{
+      /* adjecent sibling selector */
+      font-style: italic;
+     margin-top: -20px;
+    }
+    p+p{
+      line-height: 22px;
+      padding: 20px;
+      font-size: 18px;
+    }
+    #cards-section>div:first-child>h1{
+      color: green;
+    }
+    #cards-section>div:last-child>h1{
+      color: blue;
+    }
+    #cards-section>div:nth-child(2)>h1{
+      color: orange;
+    }
+    button{
+      background-color: transparent;
+      color: blue;
+      font-size: 30px;
+      font-weight: bold;
+      border-radius: 7px;
+      padding: 10px 20px 10px 20px;  
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="heading">
+    <h1>Choose a plan that right for your business</h1>
+    <p>
+      We collect reviews from our users so you can get an honest opinion of
+      what an experience with our website are really like!
+    </p>
+  </div>
+
+  <!-- Cards section -->
+  <div id="cards-section">
+    <!-- This section should contain 3 children divs, each div should have h2,h1,p,p,button -->
+    <div>
+      <h2>Starter Plan</h2>
+      <h1>Free</h1>
+      <p>Per month</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae fugiat obcaecati modi.</p>
+      <button>Start Now</button>
+
+    </div>
+    <div>
+      <h2>Starter Plan</h2>
+      <h1>$59.00</h1>
+      <p>Per month</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae fugiat obcaecati modi.</p>
+      <button>Start Now</button>
+
+    </div>
+    <div>
+      <h2>Starter Plan</h2>
+      <h1>$59.00</h1>
+      <p>Per month</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae fugiat obcaecati modi.</p>
+      <button>Start Now</button>
+
+    </div>
+  </div>
+</body>
+
+</html>
