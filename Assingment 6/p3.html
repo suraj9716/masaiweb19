@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #main{
+        /* border: 2px solid black; */
+        width:40%;
+        height: 300px;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(3,90px);
+        gap:30px;
+        grid-template-areas: 
+            "a b b b c"
+            "d d d e f"
+            "g h i i i"
+           
+            ;
+    }
+    #main>div{
+        /* border: 2px solid #ff0000; */
+        background-color: teal;
+      
+            display: grid;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 20px;
+            font-size: 30px;
+            color: white;
+            border-radius: 5px;
+         
+
+    }
+    #main>div:nth-child(1){
+         grid-area: a;
+    }
+    #main>div:nth-child(2){
+         grid-area: b;
+    }
+    #main>div:nth-child(3){
+         grid-area: c;
+    }
+    #main>div:nth-child(4){
+         grid-area: d;
+    }
+    #main>div:nth-child(5){
+         grid-area: e;
+    }
+    #main>div:nth-child(6){
+         grid-area: f;
+    }
+    #main>div:nth-child(7){
+         grid-area: g;
+    }
+    #main>div:nth-child(8){
+         grid-area: h;
+    }
+    #main>div:nth-child(9){
+         grid-area: i;
+      
+    }
+    #aaa{
+         margin-left: 50px;
+    }
+    #b{
+        margin-right: -7px;
+    }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div id="b"></div>
+        <div style="margin-right:-10px;"></div>
+        <div></div>
+        <div  style="margin-right:-20px ;"></div>
+        <div style="margin-left:20px ; margin-right: -40px;"></div>
+        <div id="aaa"></div>
+    </div>
+</body>
+</html>

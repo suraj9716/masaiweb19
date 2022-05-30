@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .box{
+           /* without flex */
+           border: 2px solid black;
+          /* height: 400px; */
+        display: flex;
+    
+        flex-direction: column;
+        
+           /* flex-direction:row/row-reverse/column/column-reverse */
+        
+         /* flex-wrap:nowrap/wrap wrap-reverse; */
+         /* justify-content: flex-start/center/space-around/space-between/space-evenly/flex-end; */
+        /* align-content:strech/; */
+     
+       }
+       .box>div{
+           padding: 30px;
+         
+       }
+       .box>div:first-child{
+           border: 2px solid red;
+           background-color: teal;
+         /* flex-grow: 1; */
+        /* width: 200px; */
+        /* flex-basis: 200px; */
+         
+
+       }
+       .box>div:nth-child(2){
+           border: 2px solid red;
+           background-color: red;
+           /* flex-grow: 1; */
+       }
+       .box>div:nth-child(3){
+           border: 2px solid red;
+           background-color: green;
+           /* flex-grow: 2; */
+        }
+       /* .box>div:nth-child(4){
+           border: 2px solid red;
+           background-color: blue;
+         
+       }
+       .box>div:nth-child(5){
+           border: 2px solid red;
+           background-color: yellow;
+        
+       }
+       .box>div:nth-child(6){
+           border: 2px solid red;
+           background-color: rgb(70, 136, 89);
+       } */
+       /* .box>div:nth-child(7){
+           border: 2px solid red;
+           background-color: green;
+           order:10
+       } */
+       /* .box>div:nth-child(8){
+           border: 2px solid red;
+           background-color: blue;
+           
+       }
+       .box>div:nth-child(9){
+           border: 2px solid red;
+           background-color: yellow;
+           
+       }
+       .box>div:nth-child(10){
+           border: 2px solid red;
+           background-color: rgb(70, 136, 89);
+       }  */
+     
+     
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+       <!-- <div>4</div>
+        <div>5</div>
+        <div>6</div> -->
+        <!-- <div>7</div>
+        <div>8</div>
+        <div>9</div> -->
+        
+      
+   
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont>div{
+            background-color: teal;
+    
+        }
+        .cont{
+          display: grid;
+        grid-template-columns:repeat(3,1fr);
+        grid-template-rows: repeat(4,100px);
+        gap: 20px;
+        grid-template-areas: 
+        "a b c"
+        "a b d"
+        "a e f"
+        ;
+        }
+        .cont>div:nth-child(1){
+            background-color: red;
+            grid-area: a;
+        }
+        .cont>div:nth-child(2){
+            background-color: blue;
+            grid-area: b;
+        }
+        .cont>div:nth-child(3){
+            grid-area: c;
+        }
+        .cont>div:nth-child(4){
+            grid-area: d;
+        }
+        .cont>div:nth-child(5){
+            grid-area: e;
+        }
+        .cont>div:nth-child(6){
+            grid-area: f;
+        }
+        .cont{
+          display: grid;
+        /* grid-template-columns:repeat(3,1fr);
+        grid-template-rows: repeat(3,40px); */
+        /* gap: 20px;
+        grid-template-areas: 
+        "1 2 3"
+        "4 4 4"
+        "5 5 6"
+        ; */
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae accusamus totam quam odio facilis aspernatur enim, hic adipisci tempora laborum facere illum eos praesentium pariatur tempore, quae impedit nesciunt corrupti.\</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+       
+    </div>
+</body>
+</html>

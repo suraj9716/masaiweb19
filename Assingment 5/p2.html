@@ -1,0 +1,107 @@
+<!-- masai navbar -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #navbar{
+            /* border: 2px solid black; */
+            width: 100%;
+       
+            height: 60px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #navbar>div:first-child{
+            /* border: 1px solid red; */
+            width:10%;
+            height: 100%;
+        }
+        #navbar>div:last-child{
+            /* border: 1px solid blue; */
+            width:70%;
+            height: 100%;
+        }
+        #navbar>div{
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            justify-content: space-around;
+          
+        }
+        p+div{
+            display: flex;
+            background-color: #f2fdff;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 25px;
+        }
+        p+div>img{
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
+        }
+        select{
+          border: none;
+          font-size: 15px;
+          text-transform: uppercase;
+        }
+        select>option{
+            /* background-color: black; */
+            color: white;
+        }
+        #navbar>div:nth-child(2){
+            border: 2px solid red;
+           /* justify-content: flex-end; */
+           border-radius: 10px;
+           order: 1;
+           height: 80%;
+           align-items: center;
+           justify-content: center;
+           
+        }
+        #navbar>div:nth-child(2)>button{
+            border: 1px solid red;
+            background-color: white;
+            color: red;
+            border: none;
+            /* padding: 1px 20px; */
+            text-transform: uppercase;
+           padding: 2px 15px;
+           
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div>
+            <img src="https://www.masaischool.com/img/navbar/logo.svg"/>
+        </div>
+        <div>
+            <button>Login</button>
+        </div>
+        <div>
+            <select>
+                <option value="">Courses</option>
+                <option value="">Courses</option>
+                <option value="">Courses</option>
+                <option value="">Courses</option>
+            </select>
+            <p>FEES & isA</p>
+            <p>About us</p>
+            <p>About us</p>
+            <p>hire from us</p>
+            <p>Faq</p>
+            <p>events</p>
+            <div>
+            <p>refer and earn</p>
+            <img src="https://www.masaischool.com/img/referral/hand.png"/>
+            </div>
+      </div>
+</body>
+</html>

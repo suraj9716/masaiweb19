@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            /* border: 2px solid red; */
+            width:100%;
+            height:600px;
+            background-color: #fffafb;
+           display: flex;
+           flex-direction: column;
+           justify-content: space-evenly;
+
+        }
+        #main>div:nth-child(1){
+            /* border: 2px solid blue; */
+            height: 20%;
+            width:40%;
+            margin: auto;
+            text-align: center;
+        }
+        #main>div:nth-child(2){
+            /* border: 2px solid blue; */
+            height: 50%;
+            width:85%;
+            margin: auto;
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(8,1fr);
+            grid-template-rows: (2,30px);
+            
+         
+        }
+        #main>div:nth-child(2)>div{
+            /* border: 2px solid orangered; */
+            width:70%;
+            height: 70%;
+            justify-content: center;
+            align-items: center;
+            margin: auto;  
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 15px;
+            
+        }
+        #main>div:nth-child(2)>div>img{
+         
+            width:100%;
+            height: 100%;
+           border-radius: 15px;
+
+        }
+        #main>div:last-child{
+            border: 2px solid red;
+         width:14%;
+            /* height:40px;  */
+            padding:10px 15px;
+            margin: auto;
+            text-transform: uppercase;
+            text-align: center;
+            /* padding-top: 10px; */
+           
+            color: red;
+            font-weight: 40px;
+            border-radius: 10px;
+            font-family: sans-serif;
+            
+        }
+        #main>div>h2{
+            color: #7c777e;
+            font-family: sans-serif;
+        }
+        #main>div>h1{
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div>
+            <h2>Have a Dream Company In Mind?</h2>
+            <h1>Meet Our 700+ Hiring Partners</h1>
+        </div>
+        <div>
+            <div>
+              <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/eatfit_9dc276a187.svg"/>
+            </div>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/dream11_d6c8d97a52.svg"/>
+            </div>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/urbanpiper_2884348a0b.svg"/>
+            </div>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/airmeet_93e45faced.svg"/>
+            </div>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_a5c1ce2bc6.svg"/>
+            </div>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/whitehat_5a86f1e308.svg"/>
+            </div>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/bharatpe_a3a5a3f552.svg"/>
+            </div>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/swiggy_bc1b88842e.svg"/>
+            </div>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/vyapar_3f3770ebb5.svg"/>
+            </div>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/pagarbook_2746958f65.svg"/>
+            </div>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/smallcase_1740bcc33f.svg"/>
+            </div>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_23a9923a34.svg"/>
+            </div>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/ola_15b5ee2b82.svg"/>
+            </div>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/ibm_795b5429ee.svg"/>
+            </div>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/byjus_e7b97a9c80.svg"/>
+            </div>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/ajio_a16cd7a85b.svg"/>
+            </div>
+        </div>
+        <div>See More Partners</div>
+    </div>
+</body>
+</html>

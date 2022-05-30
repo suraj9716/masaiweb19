@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #main{
+            /* border: 2px solid black; */
+            width: 100%;
+            height:50px;
+            display: flex;
+           justify-content: space-between;
+           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+   
+      #main>div:first-child{
+        /* border: 2px solid red; */
+            width:10%;
+            height: 100%;
+     
+        }
+        #main>div:last-child{
+            /* border: 2px solid red; */
+            width:60%;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            
+        }
+        #main>div>p{
+           color:black;
+           font-family: 'Arial';
+       font-size: 20px;
+       
+       
+        }
+        #main>div>img{
+            width:100%;
+          
+        }
+        #main1{
+            /* border: 5px solid black; */
+            width: 100%;
+            height: 700px;
+            display: flex;
+            margin-top: 30px;
+        }
+        #main1>div{
+            /* border: 3px solid blue; */
+            width:50%;
+            height: 100%;
+        }
+       #para>div:first-child{
+           /* border:1px solid black; */
+           width: 100%;
+           height: 80%;
+       }
+       #para>div:last-child{
+           /* border:1px solid black; */
+           width: 100%;
+           height: 20%;
+           display: flex;
+        
+       }
+       #para>div:last-child>div:first-child{
+           /* border:5px solid teal; */
+           width:30%;
+           height:100%;
+       }
+       #para>div:last-child>div:first-child>img{
+          padding-left: 20px;
+           width:100%;
+           height:90%;
+       }
+       #para>div:last-child>div:last-child{
+           /* border:5px solid teal; */
+           width:70%;
+           height:100%;
+           
+       }
+       #para>div:last-child>div:last-child>h2{
+           /* border:5px solid teal; */
+           width:80%;
+           height:100%;
+           padding-left: 40px;
+       }
+       #main1>div:last-child>div:first-child{
+          /* border: 2px solid red; */
+          width:100%;
+          height: 48%;
+          display: flex;
+          margin-bottom: 20px;
+       }
+       #main1>div:last-child>div:first-child>div{
+          /* border: 2px dotted blue; */
+          width:40%;
+          height: 100%;
+          margin-right: 30px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+       }
+       #main1>div:last-child>div:first-child img{
+          
+         width:30%;
+          height: 30%;
+          margin-right: 30px;
+          padding-left: 20px;
+          padding-top: 20px;
+       }
+       #main1>div:last-child>div:first-child h2{
+          
+          width:80%;
+          padding-left: 20px;
+        }
+       #main1>div:last-child>div:first-child p{
+          
+          width:80%;
+          padding-left: 20px;
+          line-height: 30px;
+          font-size: 20px;
+          color: grey;
+        }
+       #main1>div:last-child>div:last-child{
+          /* border: 2px solid red; */
+          width:100%;
+          height: 48%;
+          display: flex;
+          justify-content:flex-start;
+         
+       }
+        #main1>div:last-child>div:first-child>div{
+          /* border: 2px dotted blue; */
+          width:40%;
+          height: 100%;
+          margin-right: 30px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+       }
+       #main1>div:last-child>div:first-child img{
+          
+         width:25%;
+          height: 25%;
+          margin-right: 30px;
+          padding-left: 20px;
+          padding-top: 20px;
+       }
+       #main1>div:last-child>div:first-child h2{
+          margin: 10px 0px;
+          width:80%;
+          padding-left: 20px;
+        }
+       #main1>div:last-child>div:first-child p{
+          
+          width:80%;
+          padding-left: 20px;
+          line-height: 30px;
+          font-size: 20px;
+          color: grey;
+        }
+      
+       #main1>div:last-child>div:last-child>div{
+          /* border: 2px dotted blue; */
+          width:40%;
+          height: 100%;
+          margin-right: 30px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          
+       }
+
+       #main1>div:last-child>div:last-child img{
+          
+          width:25%;
+           height: 25%;
+           margin-right: 30px;
+           padding-left: 20px;
+           padding-top: 20px;
+        }
+        #main1>div:last-child>div:last-child h2{
+           
+           width:80%;
+           padding-left: 20px;
+         }
+        #main1>div:last-child>div:last-child p{
+           
+           width:80%;
+           padding-left: 20px;
+           line-height: 30px;
+           font-size: 20px;
+           color: grey;
+         }
+       #para>div>p{
+           padding-left:30px ;
+           padding-top: 50px;
+           text-transform: uppercase;
+           color: blue;
+          letter-spacing: -1.5px;
+           font-weight: bold;
+           word-spacing: 2px;
+       }
+       p+h1{
+           /* border:2px solid red ; */
+           width:70%;
+           font-size: 40px;
+           padding-left: 30px;
+           word-spacing: 9px;
+           margin: 20px 0px;
+       }
+    #para>div:first-child>h1+p+p{
+        /* border: 2px solid blue; */
+        width:90%;
+        color: red;
+        word-spacing: 7px;
+        line-height: 26px;
+        text-transform: capitalize;
+        letter-spacing: 0.5px;
+        color: grey;
+    }
+    #para>div:first-child>h1+p{
+        /* border: 2px solid blue; */
+        width:90%;
+        color: red;
+        word-spacing: 7px;
+        line-height: 26px;
+        text-transform: capitalize;
+        letter-spacing: 0.5px;
+        color: grey;
+    }
+    </style>
+</head>
+<body>
+<div id="main">
+    <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5GuzTvmUW5lLAI-vgCbJBDTerGYNtHgtSwQ&usqp=CAU"/>
+    </div>
+    <div>
+        <p>Home</p>
+        <p>About</p>
+        <p>Course</p>
+        <p>Instructor</p>
+        <p>Blog</p>
+        <p>Contact</p>
+    </div>
+</div>
+<!-- main div -->
+<div id="main1">
+    <!-- box 1 -->
+    <div id="para">
+        <!-- for paragraph -->
+    <div>
+    <p>Welcome to study lab</p>
+    <h1>We Are StudyLab An Online Learning Center</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi perspiciatis aliquam quas nihil ducimus minima adipisci, delectus et vitae repellat debitis obcaecati? Rerum labore quis eius delectus eligendi. Necessitatibus, ex.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga quia aliquam quae asperiores tempore iure in cumque ipsa eaque quisquam ea non pariatur, quas sapiente illum labore? Nostrum, neque dolore?</p>
+    </div>
+    <!-- for image and para -->
+    <div>
+    <div>
+ <img src="https://media.istockphoto.com/photos/parents-and-their-two-children-watching-tv-together-at-home-picture-id1320021417?b=1&k=20&m=1320021417&s=170667a&w=0&h=3ls77y0IxMOIpK1GZFXl6bp2COzIEIFRixKJR4PYbOo="/>
+    </div>
+    <div>
+  <h2>Learn Anything From StudyLab,Watch Video</h2>
+    </div>
+    </div>
+    </div>
+    <!-- box 2 -->
+    <div>
+        <div>
+            <div>
+                <img src="https://preview.colorlib.com/theme/builder/img/icon/xservice-icon-3.png.pagespeed.ic.yV783EYUOG.webp"/>
+                <h2>Top Quality Content</h2>
+                <p>A small river named Duden flows by their place and supplied</p>
+            </div>
+            <div>
+                <img src="https://preview.colorlib.com/theme/builder/img/icon/xservice-icon-3.png.pagespeed.ic.yV783EYUOG.webp"/>
+                <h2>Top Quality Content</h2>
+                <p>A small river named Duden flows by their place and supplied</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://preview.colorlib.com/theme/builder/img/icon/xservice-icon-3.png.pagespeed.ic.yV783EYUOG.webp"/>
+                <h2>Top Quality Content</h2>
+                <p>A small river named Duden flows by their place and supplied</p>
+            </div>
+            <div>
+                <img src="https://preview.colorlib.com/theme/builder/img/icon/xservice-icon-3.png.pagespeed.ic.yV783EYUOG.webp"/>
+                <h2>Top Quality Content</h2>
+                <p>A small river named Duden flows by their place and supplied</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
